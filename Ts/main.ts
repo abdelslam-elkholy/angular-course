@@ -1,4 +1,5 @@
 import { Point } from "./Point";
+import { LikesComponent } from "./likes-component";
 // const ColorRed = 0
 // const ColorGreen = 1
 // const ColorBlue = 2
@@ -36,3 +37,9 @@ let drawPoint = (point: Point) => {
 
 const point = new Point(1, 3);
 point.draw();
+
+const likes = new LikesComponent(false, 9);
+likes.onClick();
+console.log(
+  `The likes number is ${likes.likesCount} and is selected is ${likes.isSelected}`
+);
